@@ -11,17 +11,17 @@
         Calculator
     </title>
 </head>
-
+<body>
 <form name="form1" class="calci" action="calculator.html" method="post">
     <div class="calcucontainer">
         <input type="text" name="answer" id="display">
 
         <div class="row" id="row1">
-            <input class="btn" type="button" name="btndesign" value="C" onclick="form1.answer.value=' ' ">
-            <input class="btn" type="button" name="btndesign" value="<"
+            <input class="btn darkbtn" type="button" name="btndesign" value="C" onclick="form1.answer.value=' ' ">
+            <input class="btn darkbtn" type="button" name="btndesign" value="<"
                 onclick="form1.answer.value=form1.answer.value.substring(0,form1.answer.value.length*1-1)">
-            <input class="btn" type="button" name="btndesign" value="0" onclick="form1.answer.value+='00' ">
-            <input class="btn" type="button" name="btndesign" value="/" onclick="form1.answer.value+='/' ">
+            <input class="btn darkbtn" type="button" name="btndesign" value="00" onclick="form1.answer.value+='00' ">
+            <input class="btn operatorDesign" type="button" name="btndesign" value="/" onclick="form1.answer.value+='/' ">
         </div>
 
 
@@ -52,10 +52,11 @@
         <div class="row" id="row5">
             <input class="btn" type="button" id="zero" value="0" onclick="form1.answer.value+='0' ">
             <input class="btn" type="button" name="btndesign" value="." onclick="form1.answer.value+='.' ">
-            <input class="btn operatorDesign" type="button" name="operatorDesign" value="=" onclick="form1.answer.value=eval(form1.answer.value)">
+            <input class="btn operatorDesign equalsbtn" type="button" name="operatorDesign" value="=" onclick="form1.answer.value=eval(form1.answer.value)">
         </div>
     </div>
 
 </form>
 
+</body>
 </html>
